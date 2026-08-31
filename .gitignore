@@ -1,0 +1,17 @@
+# Doc nội bộ (context bàn giao)
+PROJECT_TASK.md
+HANDOVER.md
+HANDOVER_ARCHIVE.md
+TASKBOARD.html
+# Tư liệu gốc / cá nhân — KHÔNG public
+Tai lieu tham khao/
+Guide_oldbie.txt
+*.jpg
+*.zip
+# Research thô + pipeline build (chạy local, cần Excel gốc)
+research/
+tools/
+__pycache__/
+# Note nội bộ (có context private/cost)
+GFL2_TIERLIST_ROLL_GUIDE.md
+GFL2_TEAM_COMPS.md
