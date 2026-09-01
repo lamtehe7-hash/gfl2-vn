@@ -150,8 +150,8 @@ let tab='chars', cur=null, qs='';
 function chipAttr(a){ if(!a) return '';
   const col = ATTR_COLOR[a]||'var(--muted)';
   return `<span class="chip attr" style="border:1px solid ${col}; color:${col}; background:transparent">${esc(a)}</span>`; }
-function tierBadge(c){ if(!c.tier||!c.tier.t||c.tier.t==='U') return '';
-  return `<span class="tb t${esc(c.tier.t)}" title="${esc(c.tier.note||'')}">${esc(c.tier.t)}</span>`; }
+function tierBadge(c){ if(!c.tier||c.tier.t!=='CN') return '';
+  return `<span class="tb tCN" title="${esc(c.tier.note||'')}">CN</span>`; }
 function bindMlinks(root){
   (root||document).querySelectorAll('.mlink').forEach(el=>el.onclick=()=>{
     const c2=DB.chars.find(x=>x.name===el.dataset.n);
